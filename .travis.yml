@@ -3,6 +3,4 @@ language: objective-c
 osx_image: xcode8.2
 
 xcode_project: Metronome.xcodeproj
-xcode_scheme: 
-- MetronomeTests
-- MetronomeUITests
+xcode_scheme: Metronome
