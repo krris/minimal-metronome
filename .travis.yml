@@ -2,5 +2,9 @@ language: objective-c
 
 osx_image: xcode8.2
 
+env:
+  global:
+  - PROJECT=Metronome.xcodeproj
+
 script:
-  - xcodebuild -project "$PROJECT" -scheme 'Metronome' -destination 'name=iPhone 6,OS=10.0' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO build | xcpretty
+  - xcodebuild -project "$PROJECT" -scheme 'Metronome' -destination 'name=iPhone 7,OS=10.1' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO build | xcpretty
