@@ -178,6 +178,7 @@
 				492D9C061E5A3A680085EE8A /* Resources */,
 				68A6B47CFFC3E034184B88F0 /* [CP] Embed Pods Frameworks */,
 				4A461E203E90BD645ECD8080 /* [CP] Copy Pods Resources */,
+				493EAFEC1E6215C900ED6E9C /* SwiftLInt */,
 			);
 			buildRules = (
 			);
@@ -318,6 +319,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetronomeTests/Pods-MetronomeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		493EAFEC1E6215C900ED6E9C /* SwiftLInt */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLInt;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		4A461E203E90BD645ECD8080 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -700,6 +715,7 @@
 				492D9C321E5A3A690085EE8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		492D9C331E5A3A690085EE8A /* Build configuration list for PBXNativeTarget "MetronomeTests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +724,7 @@
 				492D9C351E5A3A690085EE8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		492D9C361E5A3A690085EE8A /* Build configuration list for PBXNativeTarget "MetronomeUITests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +733,7 @@
 				492D9C381E5A3A690085EE8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
