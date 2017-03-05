@@ -4,13 +4,15 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainScreenViewController: UIViewController {
 
+    public var viewModel: MainScreenViewModel!
     @IBOutlet private weak var beatLabel: BeatLabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        assert(viewModel != nil)
         beatLabel.configureWithViewModel(viewModel: BeatViewModel(beatsPerMinute: 121))
     }
 
