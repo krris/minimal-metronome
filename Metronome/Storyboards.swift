@@ -14,12 +14,12 @@ struct Storyboards {
             return UIStoryboard(name: "MainScreen", bundle: nil)
         }
 
-        static func instantiate() -> MainScreenViewController {
-            guard let viewController = storyboard.instantiateViewController(withIdentifier: "MainScreenViewController")
+        static func instantiate(viewModel: MainScreenViewModel) -> MainScreenViewController {
+            guard let viewController = storyboard.instantiateViewController(withIdentifier: MainScreenViewController.nameOfClass)
                 as? MainScreenViewController else {
                 fatalError("Cannot isntatiate \(MainScreenViewController.self)")
             }
-            viewController.viewModel = MainScreenViewModel(beatViewModel: BeatViewModel(beatsPerMinute: 64))
+            viewController.viewModel = viewModel
             return viewController
         }
     }

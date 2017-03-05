@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
 
-        let mainScreenViewController = Storyboards.MainScreen.instantiate()
+        let viewModel = MainScreenViewModel(beatViewModel: BeatViewModel(beatsPerMinute: 64))
+        let mainScreenViewController = Storyboards.MainScreen.instantiate(viewModel: viewModel)
         window?.rootViewController = mainScreenViewController
         window?.makeKeyAndVisible()
         return true

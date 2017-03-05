@@ -13,6 +13,8 @@
 		491EDDA21E6C919500DA6E52 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EDDA11E6C919500DA6E52 /* GradientView.swift */; };
 		4928C51C1E6C97B50015B8BC /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928C51B1E6C97B50015B8BC /* Storyboards.swift */; };
 		4928C51E1E6C98350015B8BC /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928C51D1E6C98350015B8BC /* MainScreenViewModel.swift */; };
+		4928C5211E6CA1DE0015B8BC /* StoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928C5201E6CA1DE0015B8BC /* StoryboardsTests.swift */; };
+		4928C5231E6CAA640015B8BC /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928C5221E6CAA640015B8BC /* NSObject.swift */; };
 		492D9C0C1E5A3A680085EE8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D9C0B1E5A3A680085EE8A /* AppDelegate.swift */; };
 		492D9C0E1E5A3A680085EE8A /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D9C0D1E5A3A680085EE8A /* MainScreenViewController.swift */; };
 		492D9C111E5A3A680085EE8A /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492D9C0F1E5A3A680085EE8A /* MainScreen.storyboard */; };
@@ -52,6 +54,8 @@
 		491EDDA11E6C919500DA6E52 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4928C51B1E6C97B50015B8BC /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		4928C51D1E6C98350015B8BC /* MainScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		4928C5201E6CA1DE0015B8BC /* StoryboardsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsTests.swift; sourceTree = "<group>"; };
+		4928C5221E6CAA640015B8BC /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		492D9C081E5A3A680085EE8A /* Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		492D9C0B1E5A3A680085EE8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		492D9C0D1E5A3A680085EE8A /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 			children = (
 				493014FE1E6C0DCD00E5DBDD /* UIView.swift */,
 				49015BD11E6C6818008E7C07 /* UIColor.swift */,
+				4928C5221E6CAA640015B8BC /* NSObject.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			children = (
 				492D9C201E5A3A690085EE8A /* MetronomeTests.swift */,
 				492D9C221E5A3A690085EE8A /* Info.plist */,
+				4928C5201E6CA1DE0015B8BC /* StoryboardsTests.swift */,
 			);
 			path = MetronomeTests;
 			sourceTree = "<group>";
@@ -513,6 +519,7 @@
 				49B3F75A1E68B7F700470FB0 /* BeatLabel.swift in Sources */,
 				4928C51E1E6C98350015B8BC /* MainScreenViewModel.swift in Sources */,
 				491EDDA21E6C919500DA6E52 /* GradientView.swift in Sources */,
+				4928C5231E6CAA640015B8BC /* NSObject.swift in Sources */,
 				493014FF1E6C0DCD00E5DBDD /* UIView.swift in Sources */,
 				49015BD21E6C6818008E7C07 /* UIColor.swift in Sources */,
 			);
@@ -522,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4928C5211E6CA1DE0015B8BC /* StoryboardsTests.swift in Sources */,
 				492D9C211E5A3A690085EE8A /* MetronomeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

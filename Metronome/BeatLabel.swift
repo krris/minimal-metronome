@@ -17,9 +17,10 @@ final class BeatLabel: UILabel {
     private func setUpStyling() {
         font = UIFont.systemFont(ofSize: 140, weight: UIFontWeightUltraLight)
         textColor = UIColor.white
+        accessibilityIdentifier = "beats-per-minute"
     }
 
-    public func configureWithViewModel(viewModel: BeatViewModel) {
+    public func configureWith(viewModel: BeatViewModel) {
         text = viewModel.beatsPerMinute
     }
 }

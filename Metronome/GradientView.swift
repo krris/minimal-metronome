@@ -10,7 +10,8 @@ final class GradientView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        setUpGradientView()
+        setUpGradient()
+        accessibilityIdentifier = "gradient"
     }
 
     override func layoutSubviews() {
@@ -19,7 +20,7 @@ final class GradientView: UIView {
 
     // MARK: Private
 
-    private func setUpGradientView() {
+    private func setUpGradient() {
         gradient.colors = [MetronomeColor.Gradient.green.cgColor, MetronomeColor.Gradient.blue.cgColor]
         gradient.frame = bounds
         gradient.startPoint = CGPoint(x: 0, y: 0)

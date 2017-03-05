@@ -14,6 +14,8 @@ class MetronomeUITests: XCTestCase {
     }
 
     func testExample() {
-        XCTAssert(true)
+        let app = XCUIApplication()
+        XCTAssertTrue(app.staticTexts["beats-per-minute"].exists)
+        XCTAssertTrue(app.otherElements["gradient"].exists)
     }
 }
