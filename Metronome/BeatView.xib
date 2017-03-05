@@ -15,17 +15,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SwO-cD-Eoe">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Br-fL-ZcM">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="SwO-cD-Eoe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="P7f-7z-brZ"/>
-                <constraint firstAttribute="trailing" secondItem="SwO-cD-Eoe" secondAttribute="trailing" id="fHJ-9I-V2d"/>
-                <constraint firstItem="SwO-cD-Eoe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g3B-6l-qhl"/>
-                <constraint firstAttribute="bottom" secondItem="SwO-cD-Eoe" secondAttribute="bottom" id="kdZ-W8-XGF"/>
+                <constraint firstAttribute="bottom" secondItem="7Br-fL-ZcM" secondAttribute="bottom" id="4jF-9i-ErN"/>
+                <constraint firstItem="7Br-fL-ZcM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4rK-oq-2OO"/>
+                <constraint firstAttribute="trailing" secondItem="7Br-fL-ZcM" secondAttribute="trailing" id="WbN-1F-Q1h"/>
+                <constraint firstItem="7Br-fL-ZcM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wIP-Yh-wEU"/>
             </constraints>
         </view>
     </objects>

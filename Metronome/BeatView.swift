@@ -10,4 +10,27 @@ import UIKit
 
 final class BeatView: UIView, Reusable {
     let nibName: String = "BeatView"
+    let gradient = CAGradientLayer()
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        setUpGradientView()
+    }
+
+    override func layoutSubviews() {
+        updateGradientLocation()
+    }
+
+    // MARK: Gradient
+
+    private func setUpGradientView() {
+        gradient.frame = bounds
+        gradient.colors = [UIColor.red.cgColor, UIColor.blue.cgColor]
+        layer.addSublayer(gradient)
+    }
+
+    private func updateGradientLocation() {
+        gradient.frame = bounds
+    }
 }
