@@ -6,12 +6,12 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    @IBOutlet private weak var beatView: BeatView!
+    @IBOutlet private weak var beatLabel: BeatLabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        beatView.configureWithViewModel(viewModel: BeatViewModel(beatsPerMinute: 121))
+        beatLabel.configureWithViewModel(viewModel: BeatViewModel(beatsPerMinute: 121))
     }
 
     override func didReceiveMemoryWarning() {
