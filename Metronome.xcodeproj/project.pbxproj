@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		15219B8945B6CF9577EBFBF7 /* Pods_MetronomeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A6053160B128EF52FD6D97 /* Pods_MetronomeUITests.framework */; };
 		49015BD21E6C6818008E7C07 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49015BD11E6C6818008E7C07 /* UIColor.swift */; };
+		49015BD41E6C7967008E7C07 /* BeatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49015BD31E6C7967008E7C07 /* BeatViewModel.swift */; };
 		492D9C0C1E5A3A680085EE8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D9C0B1E5A3A680085EE8A /* AppDelegate.swift */; };
-		492D9C0E1E5A3A680085EE8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D9C0D1E5A3A680085EE8A /* ViewController.swift */; };
+		492D9C0E1E5A3A680085EE8A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D9C0D1E5A3A680085EE8A /* MainViewController.swift */; };
 		492D9C111E5A3A680085EE8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492D9C0F1E5A3A680085EE8A /* Main.storyboard */; };
 		492D9C131E5A3A680085EE8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492D9C121E5A3A680085EE8A /* Assets.xcassets */; };
 		492D9C161E5A3A680085EE8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492D9C141E5A3A680085EE8A /* LaunchScreen.storyboard */; };
@@ -45,9 +46,10 @@
 		2E1E646044572FC0892218DB /* Pods-Metronome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metronome/Pods-Metronome.release.xcconfig"; sourceTree = "<group>"; };
 		46C3ED6BC633C3EBF33900EF /* Pods-MetronomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetronomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetronomeTests/Pods-MetronomeTests.release.xcconfig"; sourceTree = "<group>"; };
 		49015BD11E6C6818008E7C07 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		49015BD31E6C7967008E7C07 /* BeatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatViewModel.swift; sourceTree = "<group>"; };
 		492D9C081E5A3A680085EE8A /* Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		492D9C0B1E5A3A680085EE8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		492D9C0D1E5A3A680085EE8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		492D9C0D1E5A3A680085EE8A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		492D9C101E5A3A680085EE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		492D9C121E5A3A680085EE8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		492D9C151E5A3A680085EE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,7 +136,7 @@
 				49015BD01E6C186B008E7C07 /* Extensions */,
 				49B3F7581E68B79100470FB0 /* Views */,
 				492D9C0B1E5A3A680085EE8A /* AppDelegate.swift */,
-				492D9C0D1E5A3A680085EE8A /* ViewController.swift */,
+				492D9C0D1E5A3A680085EE8A /* MainViewController.swift */,
 				492D9C0F1E5A3A680085EE8A /* Main.storyboard */,
 				492D9C121E5A3A680085EE8A /* Assets.xcassets */,
 				492D9C141E5A3A680085EE8A /* LaunchScreen.storyboard */,
@@ -166,6 +168,7 @@
 			children = (
 				49B3F7591E68B7F700470FB0 /* BeatView.swift */,
 				49B3F75B1E68B80200470FB0 /* BeatView.xib */,
+				49015BD31E6C7967008E7C07 /* BeatViewModel.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -490,8 +493,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492D9C0E1E5A3A680085EE8A /* ViewController.swift in Sources */,
+				492D9C0E1E5A3A680085EE8A /* MainViewController.swift in Sources */,
 				492D9C0C1E5A3A680085EE8A /* AppDelegate.swift in Sources */,
+				49015BD41E6C7967008E7C07 /* BeatViewModel.swift in Sources */,
 				49B3F75A1E68B7F700470FB0 /* BeatView.swift in Sources */,
 				493014FF1E6C0DCD00E5DBDD /* UIView.swift in Sources */,
 				49015BD21E6C6818008E7C07 /* UIColor.swift in Sources */,

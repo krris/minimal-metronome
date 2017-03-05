@@ -1,3 +1,7 @@
+//
+//  Copyright © 2017 KrrisPl. All rights reserved.
+//
+
 import UIKit
 
 // Make UIView reusable by loading a view from .xib

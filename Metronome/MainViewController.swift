@@ -1,15 +1,17 @@
 //
-//  Created by krris on 19/02/2017.
 //  Copyright © 2017 KrrisPl. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
+
+    @IBOutlet private weak var beatView: BeatView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        beatView.configureWithViewModel(viewModel: BeatViewModel(beatsPerMinute: 121))
     }
 
     override func didReceiveMemoryWarning() {

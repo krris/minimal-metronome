@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12106.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,18 +15,31 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Br-fL-ZcM">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAQ-Xv-2Cn">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="124" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUZ-ua-BxH">
+                    <rect key="frame" x="86.5" y="140" width="202.5" height="167.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="140"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.87867673724687023" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="7Br-fL-ZcM" secondAttribute="bottom" id="4jF-9i-ErN"/>
-                <constraint firstItem="7Br-fL-ZcM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4rK-oq-2OO"/>
-                <constraint firstAttribute="trailing" secondItem="7Br-fL-ZcM" secondAttribute="trailing" id="WbN-1F-Q1h"/>
-                <constraint firstItem="7Br-fL-ZcM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wIP-Yh-wEU"/>
+                <constraint firstItem="qUZ-ua-BxH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="140" id="bxg-Rb-Aw4"/>
+                <constraint firstItem="qUZ-ua-BxH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cd1-0H-1zv"/>
+                <constraint firstItem="JAQ-Xv-2Cn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jom-NO-jUt"/>
+                <constraint firstItem="JAQ-Xv-2Cn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="k6r-BD-K6a"/>
+                <constraint firstAttribute="bottom" secondItem="JAQ-Xv-2Cn" secondAttribute="bottom" id="pUg-hj-nhe"/>
+                <constraint firstAttribute="trailing" secondItem="JAQ-Xv-2Cn" secondAttribute="trailing" id="rac-Vc-mjy"/>
             </constraints>
+            <connections>
+                <outlet property="backgroundView" destination="JAQ-Xv-2Cn" id="rzp-5t-JWl"/>
+                <outlet property="beatLabel" destination="qUZ-ua-BxH" id="S9a-EZ-A0p"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
         </view>
     </objects>
 </document>
