@@ -25,8 +25,10 @@ final class BeatView: UIView, Reusable {
     // MARK: Gradient
 
     private func setUpGradientView() {
+        gradient.colors = [MetronomeColor.Gradient.green.cgColor, MetronomeColor.Gradient.blue.cgColor]
         gradient.frame = bounds
-        gradient.colors = [UIColor.red.cgColor, UIColor.blue.cgColor]
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 1.2, y: 1.2)
         layer.addSublayer(gradient)
     }
 
