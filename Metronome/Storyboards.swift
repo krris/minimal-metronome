@@ -1,8 +1,4 @@
 //
-//  Storyboards.swift
-//  Metronome
-//
-//  Created by krris on 05/03/2017.
 //  Copyright © 2017 KrrisPl. All rights reserved.
 //
 

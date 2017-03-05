@@ -13,7 +13,7 @@ class MainScreenViewController: UIViewController {
         super.viewDidLoad()
 
         assert(viewModel != nil)
-        beatLabel.configureWith(viewModel: BeatViewModel(beatsPerMinute: 121))
+        beatLabel.configureWith(viewModel: viewModel.beatViewModel)
     }
 
     override func didReceiveMemoryWarning() {
