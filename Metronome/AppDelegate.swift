@@ -1,5 +1,4 @@
 //
-//  Created by krris on 19/02/2017.
 //  Copyright © 2017 KrrisPl. All rights reserved.
 //
 
@@ -12,6 +11,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+
+        let viewModel = MainScreenViewModel(beatViewModel: BeatViewModel(beatsPerMinute: 64))
+        let mainScreenViewController = Storyboards.MainScreen.instantiate(viewModel: viewModel)
+        window?.rootViewController = mainScreenViewController
+        window?.makeKeyAndVisible()
         return true
     }
 

@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		15219B8945B6CF9577EBFBF7 /* Pods_MetronomeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A6053160B128EF52FD6D97 /* Pods_MetronomeUITests.framework */; };
+		49015BD21E6C6818008E7C07 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49015BD11E6C6818008E7C07 /* UIColor.swift */; };
+		49015BD41E6C7967008E7C07 /* BeatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49015BD31E6C7967008E7C07 /* BeatViewModel.swift */; };
+		491EDDA21E6C919500DA6E52 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EDDA11E6C919500DA6E52 /* GradientView.swift */; };
+		4928C51C1E6C97B50015B8BC /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928C51B1E6C97B50015B8BC /* Storyboards.swift */; };
+		4928C51E1E6C98350015B8BC /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928C51D1E6C98350015B8BC /* MainScreenViewModel.swift */; };
+		4928C5211E6CA1DE0015B8BC /* StoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928C5201E6CA1DE0015B8BC /* StoryboardsTests.swift */; };
+		4928C5231E6CAA640015B8BC /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928C5221E6CAA640015B8BC /* NSObject.swift */; };
 		492D9C0C1E5A3A680085EE8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D9C0B1E5A3A680085EE8A /* AppDelegate.swift */; };
-		492D9C0E1E5A3A680085EE8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D9C0D1E5A3A680085EE8A /* ViewController.swift */; };
-		492D9C111E5A3A680085EE8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492D9C0F1E5A3A680085EE8A /* Main.storyboard */; };
+		492D9C0E1E5A3A680085EE8A /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D9C0D1E5A3A680085EE8A /* MainScreenViewController.swift */; };
+		492D9C111E5A3A680085EE8A /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492D9C0F1E5A3A680085EE8A /* MainScreen.storyboard */; };
 		492D9C131E5A3A680085EE8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492D9C121E5A3A680085EE8A /* Assets.xcassets */; };
 		492D9C161E5A3A680085EE8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492D9C141E5A3A680085EE8A /* LaunchScreen.storyboard */; };
 		492D9C211E5A3A690085EE8A /* MetronomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D9C201E5A3A690085EE8A /* MetronomeTests.swift */; };
 		492D9C2C1E5A3A690085EE8A /* MetronomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D9C2B1E5A3A690085EE8A /* MetronomeUITests.swift */; };
+		493014FF1E6C0DCD00E5DBDD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493014FE1E6C0DCD00E5DBDD /* UIView.swift */; };
+		49B3F75A1E68B7F700470FB0 /* BeatLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3F7591E68B7F700470FB0 /* BeatLabel.swift */; };
 		A69196C808801E6900BA8A4C /* Pods_Metronome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655395B4D40BFE60FB1FCD6F /* Pods_Metronome.framework */; };
 		E6749C7860183DA665A2BCEE /* Pods_MetronomeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81462867A9C62B7D49B23AC3 /* Pods_MetronomeTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,10 +49,17 @@
 		050155F8E5F3483BDF3872CE /* Pods-MetronomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetronomeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetronomeUITests/Pods-MetronomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E1E646044572FC0892218DB /* Pods-Metronome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Metronome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Metronome/Pods-Metronome.release.xcconfig"; sourceTree = "<group>"; };
 		46C3ED6BC633C3EBF33900EF /* Pods-MetronomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetronomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetronomeTests/Pods-MetronomeTests.release.xcconfig"; sourceTree = "<group>"; };
+		49015BD11E6C6818008E7C07 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		49015BD31E6C7967008E7C07 /* BeatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatViewModel.swift; sourceTree = "<group>"; };
+		491EDDA11E6C919500DA6E52 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		4928C51B1E6C97B50015B8BC /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		4928C51D1E6C98350015B8BC /* MainScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		4928C5201E6CA1DE0015B8BC /* StoryboardsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsTests.swift; sourceTree = "<group>"; };
+		4928C5221E6CAA640015B8BC /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		492D9C081E5A3A680085EE8A /* Metronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		492D9C0B1E5A3A680085EE8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		492D9C0D1E5A3A680085EE8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		492D9C101E5A3A680085EE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		492D9C0D1E5A3A680085EE8A /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		492D9C101E5A3A680085EE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainScreen.storyboard; sourceTree = "<group>"; };
 		492D9C121E5A3A680085EE8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		492D9C151E5A3A680085EE8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		492D9C171E5A3A680085EE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +69,8 @@
 		492D9C271E5A3A690085EE8A /* MetronomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetronomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		492D9C2B1E5A3A690085EE8A /* MetronomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeUITests.swift; sourceTree = "<group>"; };
 		492D9C2D1E5A3A690085EE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493014FE1E6C0DCD00E5DBDD /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		49B3F7591E68B7F700470FB0 /* BeatLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatLabel.swift; sourceTree = "<group>"; };
 		655395B4D40BFE60FB1FCD6F /* Pods_Metronome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metronome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81462867A9C62B7D49B23AC3 /* Pods_MetronomeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetronomeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C24EAE40CC70D77C946A5386 /* Pods-MetronomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetronomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetronomeUITests/Pods-MetronomeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +107,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49015BD01E6C186B008E7C07 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				493014FE1E6C0DCD00E5DBDD /* UIView.swift */,
+				49015BD11E6C6818008E7C07 /* UIColor.swift */,
+				4928C5221E6CAA640015B8BC /* NSObject.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4928C51F1E6CA0AE0015B8BC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				492D9C0D1E5A3A680085EE8A /* MainScreenViewController.swift */,
+				4928C51D1E6C98350015B8BC /* MainScreenViewModel.swift */,
+				492D9C0F1E5A3A680085EE8A /* MainScreen.storyboard */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		492D9BFF1E5A3A680085EE8A = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +152,14 @@
 		492D9C0A1E5A3A680085EE8A /* Metronome */ = {
 			isa = PBXGroup;
 			children = (
+				49015BD01E6C186B008E7C07 /* Extensions */,
+				49B3F7581E68B79100470FB0 /* Views */,
+				4928C51F1E6CA0AE0015B8BC /* View Controllers */,
 				492D9C0B1E5A3A680085EE8A /* AppDelegate.swift */,
-				492D9C0D1E5A3A680085EE8A /* ViewController.swift */,
-				492D9C0F1E5A3A680085EE8A /* Main.storyboard */,
 				492D9C121E5A3A680085EE8A /* Assets.xcassets */,
 				492D9C141E5A3A680085EE8A /* LaunchScreen.storyboard */,
 				492D9C171E5A3A680085EE8A /* Info.plist */,
+				4928C51B1E6C97B50015B8BC /* Storyboards.swift */,
 			);
 			path = Metronome;
 			sourceTree = "<group>";
@@ -129,6 +169,7 @@
 			children = (
 				492D9C201E5A3A690085EE8A /* MetronomeTests.swift */,
 				492D9C221E5A3A690085EE8A /* Info.plist */,
+				4928C5201E6CA1DE0015B8BC /* StoryboardsTests.swift */,
 			);
 			path = MetronomeTests;
 			sourceTree = "<group>";
@@ -140,6 +181,16 @@
 				492D9C2D1E5A3A690085EE8A /* Info.plist */,
 			);
 			path = MetronomeUITests;
+			sourceTree = "<group>";
+		};
+		49B3F7581E68B79100470FB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49B3F7591E68B7F700470FB0 /* BeatLabel.swift */,
+				49015BD31E6C7967008E7C07 /* BeatViewModel.swift */,
+				491EDDA11E6C919500DA6E52 /* GradientView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		521EFDE1738A344BAF6C7C36 /* Pods */ = {
@@ -284,7 +335,7 @@
 			files = (
 				492D9C161E5A3A680085EE8A /* LaunchScreen.storyboard in Resources */,
 				492D9C131E5A3A680085EE8A /* Assets.xcassets in Resources */,
-				492D9C111E5A3A680085EE8A /* Main.storyboard in Resources */,
+				492D9C111E5A3A680085EE8A /* MainScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,8 +512,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492D9C0E1E5A3A680085EE8A /* ViewController.swift in Sources */,
+				4928C51C1E6C97B50015B8BC /* Storyboards.swift in Sources */,
+				492D9C0E1E5A3A680085EE8A /* MainScreenViewController.swift in Sources */,
 				492D9C0C1E5A3A680085EE8A /* AppDelegate.swift in Sources */,
+				49015BD41E6C7967008E7C07 /* BeatViewModel.swift in Sources */,
+				49B3F75A1E68B7F700470FB0 /* BeatLabel.swift in Sources */,
+				4928C51E1E6C98350015B8BC /* MainScreenViewModel.swift in Sources */,
+				491EDDA21E6C919500DA6E52 /* GradientView.swift in Sources */,
+				4928C5231E6CAA640015B8BC /* NSObject.swift in Sources */,
+				493014FF1E6C0DCD00E5DBDD /* UIView.swift in Sources */,
+				49015BD21E6C6818008E7C07 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4928C5211E6CA1DE0015B8BC /* StoryboardsTests.swift in Sources */,
 				492D9C211E5A3A690085EE8A /* MetronomeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,12 +558,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		492D9C0F1E5A3A680085EE8A /* Main.storyboard */ = {
+		492D9C0F1E5A3A680085EE8A /* MainScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				492D9C101E5A3A680085EE8A /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		492D9C141E5A3A680085EE8A /* LaunchScreen.storyboard */ = {

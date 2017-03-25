@@ -1,15 +1,19 @@
 //
-//  Created by krris on 19/02/2017.
 //  Copyright © 2017 KrrisPl. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainScreenViewController: UIViewController {
+
+    public var viewModel: MainScreenViewModel!
+    @IBOutlet private weak var beatLabel: BeatLabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        assert(viewModel != nil)
+        beatLabel.configureWith(viewModel: viewModel.beatViewModel)
     }
 
     override func didReceiveMemoryWarning() {
