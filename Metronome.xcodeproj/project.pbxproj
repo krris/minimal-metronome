@@ -305,6 +305,7 @@
 				TargetAttributes = {
 					492D9C071E5A3A680085EE8A = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 285RG2ZJXC;
 						ProvisioningStyle = Automatic;
 					};
 					492D9C1B1E5A3A680085EE8A = {
@@ -689,7 +690,9 @@
 			baseConfigurationReference = CD4BA7F7A4D6FD395361A33C /* Pods-Metronome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 285RG2ZJXC;
 				INFOPLIST_FILE = Metronome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.krris.Metronome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -702,7 +705,9 @@
 			baseConfigurationReference = 2E1E646044572FC0892218DB /* Pods-Metronome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 285RG2ZJXC;
 				INFOPLIST_FILE = Metronome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.krris.Metronome;
 				PRODUCT_NAME = "$(TARGET_NAME)";

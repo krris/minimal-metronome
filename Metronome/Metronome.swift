@@ -6,7 +6,7 @@ import Foundation
 import AVFoundation
 
 class Metronome {
-
+    public private(set) var bpm: Int = 0
     private let tickAudioFile: AVAudioFile
     private let audioPlayerNode: AVAudioPlayerNode
     private let audioEngine: AVAudioEngine
@@ -35,7 +35,7 @@ class Metronome {
     // MARK: API
 
     func play(bpm: Int) {
-
+        self.bpm = bpm
         let buffer = generateBuffer(bpm: bpm)
 
         if audioPlayerNode.isPlaying {
