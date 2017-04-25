@@ -32,6 +32,8 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
         slideView.delegate = self
     }
 
+    // MARK: SlideViewDelegate
+
     func sliderDidChangeValue(value: Int) {
         let viewModel = BeatViewModel(beatsPerMinute: value)
         beatLabel.configureWith(viewModel: viewModel)
