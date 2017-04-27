@@ -29,7 +29,20 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3M-6u-Lcg" customClass="SlideView" customModule="Metronome" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o61-6m-mPu" customClass="TwoStateButton" customModule="Metronome" customModuleProvider="target">
+                                        <rect key="frame" x="147" y="437" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Lr3-8x-zX7"/>
+                                            <constraint firstAttribute="width" constant="80" id="svg-qd-Bdb"/>
+                                        </constraints>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="o61-6m-mPu" secondAttribute="bottom" constant="150" id="H5m-XX-chL"/>
+                                    <constraint firstItem="o61-6m-mPu" firstAttribute="centerX" secondItem="r3M-6u-Lcg" secondAttribute="centerX" id="v9G-nX-Dtm"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="minimum">
                                         <integer key="value" value="40"/>
@@ -59,6 +72,7 @@
                     </view>
                     <connections>
                         <outlet property="beatLabel" destination="P63-VX-quq" id="KIy-D7-DS1"/>
+                        <outlet property="playPauseButton" destination="o61-6m-mPu" id="NOr-fM-Lbv"/>
                         <outlet property="slideView" destination="r3M-6u-Lcg" id="F4J-3B-rBX"/>
                     </connections>
                 </viewController>

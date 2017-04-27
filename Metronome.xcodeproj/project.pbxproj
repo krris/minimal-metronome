@@ -25,9 +25,12 @@
 		492D9C2C1E5A3A690085EE8A /* MetronomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D9C2B1E5A3A690085EE8A /* MetronomeUITests.swift */; };
 		493014FF1E6C0DCD00E5DBDD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493014FE1E6C0DCD00E5DBDD /* UIView.swift */; };
 		49304D0C1E91774800061C4F /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49304D0B1E91774800061C4F /* SlideView.swift */; };
+		493D5B021EB289ED00809CF5 /* TwoStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D5B011EB289ED00809CF5 /* TwoStateButton.swift */; };
+		493D5B041EB28BE500809CF5 /* TwoStateButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D5B031EB28BE500809CF5 /* TwoStateButtonViewModel.swift */; };
 		497427B01E8AE2F70083DC63 /* tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 497427AF1E8AE2F70083DC63 /* tick.wav */; };
 		497427B31E8AE32A0083DC63 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497427B21E8AE32A0083DC63 /* Metronome.swift */; };
 		49B3F75A1E68B7F700470FB0 /* BeatLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B3F7591E68B7F700470FB0 /* BeatLabel.swift */; };
+		49E9A4011EB139C500B212E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E9A4001EB139C500B212E2 /* Assets.xcassets */; };
 		A69196C808801E6900BA8A4C /* Pods_Metronome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655395B4D40BFE60FB1FCD6F /* Pods_Metronome.framework */; };
 		E6749C7860183DA665A2BCEE /* Pods_MetronomeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81462867A9C62B7D49B23AC3 /* Pods_MetronomeTests.framework */; };
 /* End PBXBuildFile section */
@@ -76,9 +79,12 @@
 		492D9C2D1E5A3A690085EE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		493014FE1E6C0DCD00E5DBDD /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		49304D0B1E91774800061C4F /* SlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
+		493D5B011EB289ED00809CF5 /* TwoStateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoStateButton.swift; sourceTree = "<group>"; };
+		493D5B031EB28BE500809CF5 /* TwoStateButtonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoStateButtonViewModel.swift; sourceTree = "<group>"; };
 		497427AF1E8AE2F70083DC63 /* tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tick.wav; sourceTree = "<group>"; };
 		497427B21E8AE32A0083DC63 /* Metronome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
 		49B3F7591E68B7F700470FB0 /* BeatLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatLabel.swift; sourceTree = "<group>"; };
+		49E9A4001EB139C500B212E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		655395B4D40BFE60FB1FCD6F /* Pods_Metronome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Metronome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81462867A9C62B7D49B23AC3 /* Pods_MetronomeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetronomeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C24EAE40CC70D77C946A5386 /* Pods-MetronomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetronomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetronomeUITests/Pods-MetronomeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +175,7 @@
 				492D9C141E5A3A680085EE8A /* LaunchScreen.storyboard */,
 				492D9C171E5A3A680085EE8A /* Info.plist */,
 				4928C51B1E6C97B50015B8BC /* Storyboards.swift */,
+				49E9A4001EB139C500B212E2 /* Assets.xcassets */,
 			);
 			path = Metronome;
 			sourceTree = "<group>";
@@ -209,6 +216,8 @@
 				49015BD31E6C7967008E7C07 /* BeatViewModel.swift */,
 				491EDDA11E6C919500DA6E52 /* GradientView.swift */,
 				49304D0B1E91774800061C4F /* SlideView.swift */,
+				493D5B011EB289ED00809CF5 /* TwoStateButton.swift */,
+				493D5B031EB28BE500809CF5 /* TwoStateButtonViewModel.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -356,6 +365,7 @@
 			files = (
 				497427B01E8AE2F70083DC63 /* tick.wav in Resources */,
 				492D9C161E5A3A680085EE8A /* LaunchScreen.storyboard in Resources */,
+				49E9A4011EB139C500B212E2 /* Assets.xcassets in Resources */,
 				492D9C111E5A3A680085EE8A /* MainScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +546,7 @@
 				490E56781EAFC5030064D7F2 /* SoundResources.swift in Sources */,
 				490E567A1EAFC59E0064D7F2 /* Bundle.swift in Sources */,
 				4928C51C1E6C97B50015B8BC /* Storyboards.swift in Sources */,
+				493D5B021EB289ED00809CF5 /* TwoStateButton.swift in Sources */,
 				49304D0C1E91774800061C4F /* SlideView.swift in Sources */,
 				492D9C0E1E5A3A680085EE8A /* MainScreenViewController.swift in Sources */,
 				492D9C0C1E5A3A680085EE8A /* AppDelegate.swift in Sources */,
@@ -543,6 +554,7 @@
 				49015BD41E6C7967008E7C07 /* BeatViewModel.swift in Sources */,
 				49B3F75A1E68B7F700470FB0 /* BeatLabel.swift in Sources */,
 				4928C51E1E6C98350015B8BC /* MainScreenViewModel.swift in Sources */,
+				493D5B041EB28BE500809CF5 /* TwoStateButtonViewModel.swift in Sources */,
 				491EDDA21E6C919500DA6E52 /* GradientView.swift in Sources */,
 				4928C5231E6CAA640015B8BC /* NSObject.swift in Sources */,
 				493014FF1E6C0DCD00E5DBDD /* UIView.swift in Sources */,
