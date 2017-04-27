@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,19 +27,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3M-6u-Lcg" customClass="SlideView" customModule="Metronome" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <integer key="value" value="230"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="initialValue">
+                                        <integer key="value" value="65"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.64402636054421769" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="r3M-6u-Lcg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5cI-fn-Cxr"/>
                             <constraint firstItem="P63-VX-quq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TSQ-42-uJI"/>
+                            <constraint firstItem="r3M-6u-Lcg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Y9k-Fk-aHN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r3M-6u-Lcg" secondAttribute="bottom" id="bGp-hY-F1F"/>
                             <constraint firstItem="P63-VX-quq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="jal-vS-QNP"/>
+                            <constraint firstAttribute="trailing" secondItem="r3M-6u-Lcg" secondAttribute="trailing" id="wNZ-RB-7Oz"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="beatLabel" destination="P63-VX-quq" id="KIy-D7-DS1"/>
+                        <outlet property="slideView" destination="r3M-6u-Lcg" id="F4J-3B-rBX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>

@@ -1,1 +1,4 @@
 line_length: 150
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
