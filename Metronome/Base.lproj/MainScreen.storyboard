@@ -31,11 +31,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3M-6u-Lcg" customClass="SlideView" customModule="Metronome" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o61-6m-mPu" customClass="TwoStateButton" customModule="Metronome" customModuleProvider="target">
-                                        <rect key="frame" x="147" y="460.5" width="80" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o61-6m-mPu" customClass="PlayPauseButton" customModule="Metronome" customModuleProvider="target">
+                                        <rect key="frame" x="127" y="440.5" width="120" height="120"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="Lr3-8x-zX7"/>
-                                            <constraint firstAttribute="width" constant="80" id="svg-qd-Bdb"/>
+                                            <constraint firstAttribute="height" constant="120" id="Lr3-8x-zX7"/>
+                                            <constraint firstAttribute="width" constant="120" id="svg-qd-Bdb"/>
                                         </constraints>
                                         <connections>
                                             <action selector="didTapPlayPauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sNx-UF-Kgf"/>

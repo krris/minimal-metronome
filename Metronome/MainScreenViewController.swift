@@ -11,7 +11,7 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
 
     @IBOutlet private weak var beatLabel: BeatLabel!
     @IBOutlet private weak var slideView: SlideView!
-    @IBOutlet private weak var playPauseButton: TwoStateButton!
+    @IBOutlet private weak var playPauseButton: PlayPauseButton!
 
     private var metronome: Metronome?
     private let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
@@ -31,13 +31,13 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
 
         assert(viewModel != nil)
         beatLabel.configureWith(viewModel: viewModel.beatViewModel)
-        configurePlayPauseButton()
 
         guard let fileUrl = Bundle.main.url(forPlayable: SoundResources.Tick.self) else {
             fatalError("Cannot open a sound resource.")
         }
         metronome = Metronome(fileURL: fileUrl)
         metronome?.play(bpm: bpm)
+
         selectionFeedbackGenerator.prepare()
 
         slideView.delegate = self
@@ -61,23 +61,12 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
 
     // MARK: Actions
 
-    @IBAction func didTapPlayPauseButton(_ sender: TwoStateButton) {
+    @IBAction func didTapPlayPauseButton(_ sender: PlayPauseButton) {
         switch sender.buttonState {
-        case .first:
+        case .play:
             metronome?.stop()
-        case .second:
+        case .pause:
             metronome?.play(bpm: bpm)
         }
-    }
-
-    // MARK: private 
-
-    private func configurePlayPauseButton() {
-        guard let playImage = UIImage(named: "pause"), let pauseImage = UIImage(named: "play") else {
-            fatalError("Cannot open an image.")
-        }
-        let playPauseViewModel = TwoStateButtonViewModel(firstStateImage: playImage, secondStateImage: pauseImage)
-        playPauseButton.configureWith(viewModel: playPauseViewModel)
-
     }
 }
