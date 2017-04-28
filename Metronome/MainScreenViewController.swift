@@ -37,10 +37,16 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
     // MARK: SlideViewDelegate
 
     func sliderDidChangeValue(value: Int) {
+        guard let metronome = metronome else { return }
+
         let beatViewModel = BeatViewModel(beatsPerMinute: value)
         viewModel = MainScreenViewModel(beatViewModel: beatViewModel)
-
         beatLabel.configureWith(viewModel: beatViewModel)
+
+        if metronome.isPlayling {
+            metronome.play(bpm: Int(viewModel.beatViewModel.beatsPerMinute)!)
+        }
+
         selectionFeedbackGenerator.selectionChanged()
     }
 
