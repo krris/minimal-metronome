@@ -6,10 +6,15 @@ import UIKit
 
 class TwoStateButton: UIButton {
 
+    enum State {
+        case first
+        case second
+    }
+
+    public private(set) var buttonState: State = .first
+
     private var firstStateImage: UIImage!
     private var secondStateImage: UIImage!
-
-    private var stateNo: UInt = 0
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,14 +32,20 @@ class TwoStateButton: UIButton {
     // MARK: private
 
     @objc private func didTapButton(button: UIButton) {
-        stateNo = (stateNo + 1) % 2
+        switch buttonState {
+        case .first:
+            buttonState = .second
+        case .second:
+            buttonState = .first
+        }
         updateImageBasedOnState()
     }
 
     private func updateImageBasedOnState () {
-        if stateNo == 0 {
+        switch buttonState {
+        case .first:
             setImage(firstStateImage, for: UIControlState.normal)
-        } else if stateNo == 1 {
+        case .second:
             setImage(secondStateImage, for: UIControlState.normal)
         }
     }

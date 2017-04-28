@@ -36,6 +36,9 @@
                                             <constraint firstAttribute="height" constant="80" id="Lr3-8x-zX7"/>
                                             <constraint firstAttribute="width" constant="80" id="svg-qd-Bdb"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="didTapPlayPauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sNx-UF-Kgf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

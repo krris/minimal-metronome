@@ -37,9 +37,22 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
     // MARK: SlideViewDelegate
 
     func sliderDidChangeValue(value: Int) {
-        let viewModel = BeatViewModel(beatsPerMinute: value)
-        beatLabel.configureWith(viewModel: viewModel)
+        let beatViewModel = BeatViewModel(beatsPerMinute: value)
+        viewModel = MainScreenViewModel(beatViewModel: beatViewModel)
+
+        beatLabel.configureWith(viewModel: beatViewModel)
         selectionFeedbackGenerator.selectionChanged()
+    }
+
+    // MARK: Actions
+
+    @IBAction func didTapPlayPauseButton(_ sender: TwoStateButton) {
+        switch sender.buttonState {
+        case .first:
+            metronome?.stop()
+        case .second:
+            metronome?.play(bpm: Int(viewModel.beatViewModel.beatsPerMinute)!)
+        }
     }
 
     // MARK: private 
