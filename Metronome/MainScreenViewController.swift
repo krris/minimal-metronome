@@ -17,6 +17,15 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
     private let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
     private var previousVelocity: CGPoint?
 
+    private var bpm: Int {
+        if let value = Int(viewModel.beatViewModel.beatsPerMinute) {
+            return value
+        } else {
+            assertionFailure("Cannot get BPM from the view model")
+            return 60
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,7 +37,7 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
             fatalError("Cannot open a sound resource.")
         }
         metronome = Metronome(fileURL: fileUrl)
-        metronome?.play(bpm: Int(viewModel.beatViewModel.beatsPerMinute)!)
+        metronome?.play(bpm: bpm)
         selectionFeedbackGenerator.prepare()
 
         slideView.delegate = self
@@ -44,7 +53,7 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
         beatLabel.configureWith(viewModel: beatViewModel)
 
         if metronome.isPlayling {
-            metronome.play(bpm: Int(viewModel.beatViewModel.beatsPerMinute)!)
+            metronome.play(bpm: bpm)
         }
 
         selectionFeedbackGenerator.selectionChanged()
@@ -57,7 +66,7 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
         case .first:
             metronome?.stop()
         case .second:
-            metronome?.play(bpm: Int(viewModel.beatViewModel.beatsPerMinute)!)
+            metronome?.play(bpm: bpm)
         }
     }
 
