@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P63-VX-quq" customClass="BeatLabel" customModule="Metronome" customModuleProvider="target">
-                                <rect key="frame" x="166" y="160" width="42" height="21"/>
+                                <rect key="frame" x="166" y="190" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -31,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o61-6m-mPu" customClass="TwoStateButton" customModule="Metronome" customModuleProvider="target">
-                                        <rect key="frame" x="147" y="437" width="80" height="80"/>
+                                        <rect key="frame" x="147" y="460.5" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="Lr3-8x-zX7"/>
                                             <constraint firstAttribute="width" constant="80" id="svg-qd-Bdb"/>
@@ -43,7 +44,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="o61-6m-mPu" secondAttribute="bottom" constant="150" id="H5m-XX-chL"/>
+                                    <constraint firstItem="o61-6m-mPu" firstAttribute="centerY" secondItem="r3M-6u-Lcg" secondAttribute="centerY" multiplier="1.5" id="UPi-GC-36M"/>
                                     <constraint firstItem="o61-6m-mPu" firstAttribute="centerX" secondItem="r3M-6u-Lcg" secondAttribute="centerX" id="v9G-nX-Dtm"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -66,10 +67,10 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="r3M-6u-Lcg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5cI-fn-Cxr"/>
+                            <constraint firstItem="P63-VX-quq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.6" id="SR7-5R-jQd"/>
                             <constraint firstItem="P63-VX-quq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TSQ-42-uJI"/>
                             <constraint firstItem="r3M-6u-Lcg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Y9k-Fk-aHN"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r3M-6u-Lcg" secondAttribute="bottom" id="bGp-hY-F1F"/>
-                            <constraint firstItem="P63-VX-quq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="jal-vS-QNP"/>
                             <constraint firstAttribute="trailing" secondItem="r3M-6u-Lcg" secondAttribute="trailing" id="wNZ-RB-7Oz"/>
                         </constraints>
                     </view>
