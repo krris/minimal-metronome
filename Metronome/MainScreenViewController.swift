@@ -16,13 +16,14 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
     private var metronome: Metronome?
     private let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
     private var previousVelocity: CGPoint?
+    private let fallbackBpm: Int = 60
 
     private var bpm: Int {
         if let value = Int(viewModel.beatViewModel.beatsPerMinute) {
             return value
         } else {
             assertionFailure("Cannot get BPM from the view model")
-            return 60
+            return fallbackBpm
         }
     }
 
