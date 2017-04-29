@@ -11,10 +11,21 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
 
     @IBOutlet private weak var beatLabel: BeatLabel!
     @IBOutlet private weak var slideView: SlideView!
+    @IBOutlet private weak var playPauseButton: PlayPauseButton!
 
     private var metronome: Metronome?
     private let selectionFeedbackGenerator = UISelectionFeedbackGenerator()
     private var previousVelocity: CGPoint?
+    private let fallbackBpm: Int = 60
+
+    private var bpm: Int {
+        if let value = Int(viewModel.beatViewModel.beatsPerMinute) {
+            return value
+        } else {
+            assertionFailure("Cannot get BPM from the view model")
+            return fallbackBpm
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +37,8 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
             fatalError("Cannot open a sound resource.")
         }
         metronome = Metronome(fileURL: fileUrl)
-        metronome?.play(bpm: Int(viewModel.beatViewModel.beatsPerMinute)!)
+        metronome?.play(bpm: bpm)
+
         selectionFeedbackGenerator.prepare()
 
         slideView.delegate = self
@@ -35,8 +47,27 @@ final class MainScreenViewController: UIViewController, SlideViewDelegate {
     // MARK: SlideViewDelegate
 
     func sliderDidChangeValue(value: Int) {
-        let viewModel = BeatViewModel(beatsPerMinute: value)
-        beatLabel.configureWith(viewModel: viewModel)
+        guard let metronome = metronome else { return }
+
+        let beatViewModel = BeatViewModel(beatsPerMinute: value)
+        viewModel = MainScreenViewModel(beatViewModel: beatViewModel)
+        beatLabel.configureWith(viewModel: beatViewModel)
+
+        if metronome.isPlayling {
+            metronome.play(bpm: bpm)
+        }
+
         selectionFeedbackGenerator.selectionChanged()
+    }
+
+    // MARK: Actions
+
+    @IBAction func didTapPlayPauseButton(_ sender: PlayPauseButton) {
+        switch sender.buttonState {
+        case .play:
+            metronome?.stop()
+        case .pause:
+            metronome?.play(bpm: bpm)
+        }
     }
 }

@@ -7,6 +7,7 @@ import AVFoundation
 
 class Metronome {
     public private(set) var bpm: Int = 0
+    public private(set) var isPlayling: Bool = false
     private let tickAudioFile: AVAudioFile
     private let audioPlayerNode: AVAudioPlayerNode
     private let audioEngine: AVAudioEngine
@@ -45,10 +46,12 @@ class Metronome {
         }
 
         self.audioPlayerNode.scheduleBuffer(buffer, at: nil, options: .loops, completionHandler: nil)
+        isPlayling = true
     }
 
     func stop() {
         audioPlayerNode.stop()
+        isPlayling = false
     }
 
     // MARK: Private
