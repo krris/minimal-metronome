@@ -12,6 +12,7 @@
 		49015BD41E6C7967008E7C07 /* BeatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49015BD31E6C7967008E7C07 /* BeatViewModel.swift */; };
 		490E56781EAFC5030064D7F2 /* SoundResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E56771EAFC5030064D7F2 /* SoundResources.swift */; };
 		490E567A1EAFC59E0064D7F2 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490E56791EAFC59E0064D7F2 /* Bundle.swift */; };
+		491CF1F41EBBAA5B0053CD62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 491CF1F31EBBAA5B0053CD62 /* GoogleService-Info.plist */; };
 		491EDDA21E6C919500DA6E52 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EDDA11E6C919500DA6E52 /* GradientView.swift */; };
 		4928C51C1E6C97B50015B8BC /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928C51B1E6C97B50015B8BC /* Storyboards.swift */; };
 		4928C51E1E6C98350015B8BC /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928C51D1E6C98350015B8BC /* MainScreenViewModel.swift */; };
@@ -59,6 +60,7 @@
 		49015BD31E6C7967008E7C07 /* BeatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatViewModel.swift; sourceTree = "<group>"; };
 		490E56771EAFC5030064D7F2 /* SoundResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundResources.swift; sourceTree = "<group>"; };
 		490E56791EAFC59E0064D7F2 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		491CF1F31EBBAA5B0053CD62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		491EDDA11E6C919500DA6E52 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4928C51B1E6C97B50015B8BC /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		4928C51D1E6C98350015B8BC /* MainScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				492D9C0B1E5A3A680085EE8A /* AppDelegate.swift */,
 				492D9C141E5A3A680085EE8A /* LaunchScreen.storyboard */,
 				492D9C171E5A3A680085EE8A /* Info.plist */,
+				491CF1F31EBBAA5B0053CD62 /* GoogleService-Info.plist */,
 				4928C51B1E6C97B50015B8BC /* Storyboards.swift */,
 				49E9A4001EB139C500B212E2 /* Assets.xcassets */,
 			);
@@ -362,6 +365,7 @@
 			files = (
 				497427B01E8AE2F70083DC63 /* tick.wav in Resources */,
 				492D9C161E5A3A680085EE8A /* LaunchScreen.storyboard in Resources */,
+				491CF1F41EBBAA5B0053CD62 /* GoogleService-Info.plist in Resources */,
 				49E9A4011EB139C500B212E2 /* Assets.xcassets in Resources */,
 				492D9C111E5A3A680085EE8A /* MainScreen.storyboard in Resources */,
 			);
